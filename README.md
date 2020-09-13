@@ -8,7 +8,7 @@ There are also some common first names used by most Chinese people. Pynamer_CN i
 - Build brute-force passwd dictionary (with pydictor or any dictor).
 - Build your own NOT USE passwd lists.
 ## How to use it?
-Usage: pynamer_CN.py [-h] [-nl NL]
+Usage: python pynamer_CN.py [-h] [-nl NL]
                      [-m {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17}] [-o O]
 ### Name styles
 - 0: SURN + 1 NAME (All lowercase e.g. zhangsan)
