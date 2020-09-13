@@ -36,4 +36,4 @@ There are also some common first names used by most Chinese people. Pynamer_CN i
 TODO
 
 ## License
-[MIT](https://github.com/crazydogen/pynamer_CN/blob/master/LICENSE)
+[MIT License](https://github.com/crazydogen/pynamer_CN/blob/master/LICENSE)
