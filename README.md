@@ -5,8 +5,8 @@ Pynamer_CN is a simple full name generator, which can generate 17 styles of the 
 There are also some common first names used by most Chinese people. Pynamer_CN is written with simple python3 codes using if-elif-else structure. Surprisingly, pynamer_CN is also supporting python2.
 ## What you can do with pynamer_CN?
 - By pynamer_CN, you can generate a common Chinese name for yourself.
-- Build Brute-force Passwd dictionary (with pydictor or any dictor).
-- Build your own NOT USE password lists.
+- Build brute-force passwd dictionary (with pydictor or any dictor).
+- Build your own NOT USE passwd lists.
 ## How to use it?
 Usage: pynamer_CN.py [-h] [-nl NL]
                      [-m {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17}] [-o O]
