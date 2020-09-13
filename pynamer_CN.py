@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
-# Author: crazydogen
+# Author:7d6a4
+# have fun &_7 d_d ^_6 a_ 4_$
 
 # ************************************
 #    _____    _______       __ __ 
@@ -227,28 +228,28 @@ def main(path, names, mode):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="""
-                Support Mode:\n
-                    0: SURN + 1 NAME (All lowercase e.g. zhangsan) \n
-                    1: SURN + 1 NAME (Only the first letter uppercase e.g. Zhangsan)\n
-                    2: SURN + 1 NAME (First letter of SURM or NAME uppercase e.g. ZhangSan)\n
-                    3: SURN + 1 NAME (ALL uppercase e.g. ZHANGSAN)\n
-                    4: SURN + 1 NAME (All lowercase with another order e.g. sanzhang)\n
-                    5: SURN + 1 NAME (Only the first letter uppercase with another order e.g. Sanzhang)\n
-                    6: SURN + 1 NAME (First letter of SURM or NAME uppercase with another order e.g. SanZhang)\n
-                    7: SURN + 1 NAME (ALL uppercase with another order e.g. SANZHANG)\n
-                    8: SURN + 2 NAME (All lowercase e.g. liyiyi)\n
-                    9: SURN + 2 NAME (Only the first letter uppercase e.g. Liyiyi)\n
-                    10: SURN + 2 NAME (First letter of SURM or NAME uppercase e.g. LiYiYi)\n
-                    11: SURN + 2 NAME (ALL uppercase e.g. LIYIYI)\n
-                    12: SURN + 2 NAME (All lowercase with another order e.g. yiyili)\n
-                    13: SURN + 2 NAME (Only the first letter uppercase with another order e.g. Yiyili)\n
-                    14: SURN + 2 NAME (First letter of SURM or NAME uppercase with another order e.g. YiYiLi)\n
-                    15: SURN + 2 NAME (ALL uppercase with another order e.g. YIYILI)\n
-                    16: SURN + 1 NAME (Abbreviation e.g. zhs or zs)\n
-                    17: SURN + 2 NAME (Abbreviation e.g. lyy)\n
+    Support Mode:\n
+        0: SURN + 1 NAME (All lowercase e.g. zhangsan) \n
+        1: SURN + 1 NAME (Only the first letter uppercase e.g. Zhangsan)\n
+        2: SURN + 1 NAME (First letter of SURM or NAME uppercase e.g. ZhangSan)\n
+        3: SURN + 1 NAME (ALL uppercase e.g. ZHANGSAN)\n
+        4: SURN + 1 NAME (All lowercase with another order e.g. sanzhang)\n
+        5: SURN + 1 NAME (Only the first letter uppercase with another order e.g. Sanzhang)\n
+        6: SURN + 1 NAME (First letter of SURM or NAME uppercase with another order e.g. SanZhang)\n
+        7: SURN + 1 NAME (ALL uppercase with another order e.g. SANZHANG)\n
+        8: SURN + 2 NAME (All lowercase e.g. liyiyi)\n
+        9: SURN + 2 NAME (Only the first letter uppercase e.g. Liyiyi)\n
+        10: SURN + 2 NAME (First letter of SURM or NAME uppercase e.g. LiYiYi)\n
+        11: SURN + 2 NAME (ALL uppercase e.g. LIYIYI)\n
+        12: SURN + 2 NAME (All lowercase with another order e.g. yiyili)\n
+        13: SURN + 2 NAME (Only the first letter uppercase with another order e.g. Yiyili)\n
+        14: SURN + 2 NAME (First letter of SURM or NAME uppercase with another order e.g. YiYiLi)\n
+        15: SURN + 2 NAME (ALL uppercase with another order e.g. YIYILI)\n
+        16: SURN + 1 NAME (Abbreviation e.g. zhs or zs)\n
+        17: SURN + 2 NAME (Abbreviation e.g. lyy)\n
     """ , formatter_class=argparse.RawTextHelpFormatter)
     parser.add_argument('-nl', help='Namelists to use. You can also type your namelist. Default MOST_USE_NAME', default=MOST_USE_NAME)
     parser.add_argument('-m', choices=range(18), help= 'Name styles 0-17', type=int, default=0)
     parser.add_argument('-o', help='Ouput path')
     args = parser.parse_args()
-    main(args.o, args.namelist, args.m)
+    main(args.o, args.nl, args.m)
