@@ -8,6 +8,31 @@ There are also some common first names used by most Chinese people. Pynamer_CN i
 - Chinese name dictionary (with pyictor or any dictor).
 - Build your own NOT USE password lists.
 ## How to use it?
+### Name styles
+- 0: SURN + 1 NAME (All lowercase e.g. zhangsan)
+- 1: SURN + 1 NAME (Only first letter uppercase e.g. Zhangsan)
+- 2: SURN + 1 NAME (Fisrt letter of SURM or NAME uppercase e.g. ZhangSan)
+- 3: SURN + 1 NAME (ALL uppercase e.g. ZHANGSAN)
+
+- 4: SURN + 1 NAME (All lowercase with another oder e.g. sanzhang)
+- 5: SURN + 1 NAME (Only first letter uppercase with another oder e.g. Sanzhang)
+- 6: SURN + 1 NAME (Fisrt letter of SURM or NAME uppercase with another oder e.g. SanZhang)
+- 7: SURN + 1 NAME (ALL uppercase with another oder e.g. SANZHANG)
+
+
+- 8: SURN + 2 NAME (All lowercase e.g. liyiyi)
+- 9: SURN + 2 NAME (Only first letter uppercase e.g. Liyiyi)
+- 10: SURN + 2 NAME (Fisrt letter of SURM or NAME uppercase e.g. LiYiYi)
+- 11: SURN + 2 NAME (ALL uppercase e.g. LIYIYI)
+
+- 12: SURN + 2 NAME (All lowercase with another oder e.g. yiyili)
+- 13: SURN + 2 NAME (Only first letter uppercase with another oder e.g. Yiyili)
+- 14: SURN + 2 NAME (Fisrt letter of SURM or NAME uppercase with another oder e.g. YiYiLi)
+- 15: SURN + 2 NAME (ALL uppercase with another oder e.g. YIYILI)
+
+- 16: SURN + 1 NAME (Abbreviation e.g. zhs or zs)
+- 17: SURN + 2 NAME (Abbreviation e.g. lyy)
+
 TODO
 
 ## License
