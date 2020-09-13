@@ -8,6 +8,8 @@ There are also some common first names used by most Chinese people. Pynamer_CN i
 - Chinese name dictionary (with pydictor or any dictor).
 - Build your own NOT USE password lists.
 ## How to use it?
+usage: pynamer_CN.py [-h] [-nl NL]
+                     [-m {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17}] [-o O]
 ### Name styles
 - 0: SURN + 1 NAME (All lowercase e.g. zhangsan)
 - 1: SURN + 1 NAME (Only the first letter uppercase e.g. Zhangsan)
@@ -33,7 +35,7 @@ There are also some common first names used by most Chinese people. Pynamer_CN i
 - 16: SURN + 1 NAME (Abbreviation e.g. zhs or zs)
 - 17: SURN + 2 NAME (Abbreviation e.g. lyy)
 
-TODO
+
 
 ## License
 [MIT License](https://github.com/crazydogen/pynamer_CN/blob/master/LICENSE)
