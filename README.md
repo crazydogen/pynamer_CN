@@ -6,7 +6,7 @@ There are also some common first names used by most Chinese people. Pynamer_CN i
 ## What you can do with pynamer_CN?
 - By pynamer_CN, you can generate a common Chinese name for yourself.
 - Chinese name dictionary (with pyictor or any dictor).
-- Build your own NOT USE passwords.
+- Build your own NOT USE password lists.
 ## How to use it?
 TODO
 
