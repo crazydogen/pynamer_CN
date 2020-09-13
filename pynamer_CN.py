@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
-# Author:7d6a4
+# Author:crazydogen
 # have fun &_7 d_d ^_6 a_ 4_$
 
 # ************************************
