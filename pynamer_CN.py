@@ -44,11 +44,11 @@ MOST_USE_NAME = ("ying", "hua", "wen", "yu", "xiu", "ming", "li", "lan", "hong",
 # Ref. http://xh.5156edu.com/pinyi.html 
 HANDPICK_NAME = ("ai", "an", "ang",
                 "bo", "bi", "bai", "bei", "bao", "ban", "bben", "bin", "bang", "bing", "biao",
-                "ci", "cai", "can", "cen", "cun", "ceng", "cong", "cang", "er"
+                "ci", "cai", "can", "cen", "cun", "ceng", "cong", "cang", "er",
                 "de", "di", "du", "dai", "dao", "dan", "deng", "ding", "dong",
-                "fa", "fu", "fei", "fan", "feng", "fang", "fing", 
+                "fa", "fu", "fei", "fan", "feng", "fang", "fing",
                 "gu", "gui", "gao", "gan", "gen", "guo", "gang", "geng", "guan", "guang",
-                "hu", "hui", "hao", "han", "he", "hen", "huo", "hang", "heng", "huan", "huang",
+                "hu", "hui", "hao", "han", "he", "hen", "huo", "hang", "heng", "huan", "huang", "hua", "hong", "hai",
                 "ji", "ju", "jiu", "jie", "jin", "jun", "jue", "jing", "jia", "jiao", "jian", "juan",
                 "kai", "kui", "kan", "kun", "kuo", "kang", "kong", "kuan", "kuang",
                 "le", "lei", "li", "lu", "lai", "lie", "lan", "lin", "lun", "lang", "ling", "long", "liao", "lian", "luan", "liang",
@@ -56,14 +56,15 @@ HANDPICK_NAME = ("ai", "an", "ang",
                 "na", "ni", "niu", "nie", "nan", "nuo", "neng", "ning",
                 "pi", "pu", "pai", "pei", "pan", "pin", "pang", "peng", "ping", "pian",
                 "qi", "qiu", "qing", "qiang", "quan", "qian",
+                "rong", "rui", "ran", "ruo",
                 "sa", "so", "se", "si", "su", "sai", "suo", "sang", "song",
                 "ta", "to", "te", "ti", "tu", "tai", "tao", "tan", "tuo", "tang", "teng", "ting", "tong", "tian",
                 "wa", "wo", "wai", "wei", "wang", "wan", "wen",
-                "xi", "xu", "xv", "xie", "xin", "xun", "xue", "xing", "xiang", "xiong", "xia", "xuan",
+                "xi", "xu", "xv", "xie", "xin", "xun", "xue", "xing", "xiang", "xiong", "xia", "xuan", "xiu", "xiao",
                 "ya", "yi", "yu", "yao", "you", "yan", "yun", "yue", "ying", "yang", "yong", "yia", "yuan",
-                "zu", "zao", "zan", "zun", "zuo", "zeng", "zong",
+                "zu", "zao", "zan", "zun", "zuo", "zeng", "zong", "zi", "ze", 
                 "zhi", "zhou", "zhan", "zhen", "zhong", "zhuan", "zhuo", "zhu", "zhe", "zheng",
-                "cha", "che", "chi", "chu", "chai", "chao", "chan", "chen", "chong", "chuang", "chuan",
+                "cha", "che", "chi", "chu", "chai", "chao", "chan", "chen", "chong", "chuang", "chuan", "chun", "cheng",
                 "sha", "shi", "shu", "shao", "shou", "shan", "shen", "shuo", "shuang", "shun")
 
 # HANDPICK_NAME_ABBREV = tuple(set([i[0] for i in HANDPICK_NAME])) + ('ch', 'sh', 'zh')
@@ -73,7 +74,6 @@ HANDPICK_NAME = ("ai", "an", "ang",
 # # Duplication detection
 # import collections
 # print([item for item, count in collections.Counter(SURN).items() if count > 1])
-
 
 def dump2file(path, lines):
     import os
@@ -248,8 +248,10 @@ if __name__ == "__main__":
         16: SURN + 1 NAME (Abbreviation e.g. zhs or zs)\n
         17: SURN + 2 NAME (Abbreviation e.g. lyy)\n
     """ , formatter_class=argparse.RawTextHelpFormatter)
-    parser.add_argument('-nl', help='Namelists to use. You can also type your namelist. Default MOST_USE_NAME', default=MOST_USE_NAME)
+    parser.add_argument('-nl', help='Namelists to use. Support MOST_USE_NAME or HANDPICK_NAME. You can also use your namelist. Default MOST_USE_NAME', default=MOST_USE_NAME)
     parser.add_argument('-m', choices=range(18), help= 'Name styles 0-17', type=int, default=0)
     parser.add_argument('-o', help='Ouput path')
     args = parser.parse_args()
+    if args.nl == "HANDPICK_NAME":
+        args.nl = HANDPICK_NAME
     main(args.o, args.nl, args.m)
