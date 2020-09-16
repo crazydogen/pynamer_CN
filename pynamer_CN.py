@@ -81,7 +81,7 @@ def dump2file(path, lines):
         with open(path, 'a') as f:
             for i in lines:
                 f.writelines(i + '\n')
-        print('Successfully writed to {}'.format(path))
+        print('Successfully written to {}'.format(path))
     else:
         raise FileExistsError
 
