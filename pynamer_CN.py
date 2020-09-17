@@ -81,14 +81,14 @@ def dump2file(path, lines):
         with open(path, 'a') as f:
             for i in lines:
                 f.writelines(i + '\n')
+        print('Total: {}'.format(len(lines)))
         print('Successfully written to {}'.format(path))
     else:
         raise FileExistsError
 
-def main(path, names, mode):
+def main(names, mode):
     """
     Args:
-        path (str): path to output
         names (tuple): names to use
         mode (int): 0 - 17
                     0: SURN + 1 NAME (All lowercase e.g. zhangsan)
@@ -224,11 +224,12 @@ def main(path, names, mode):
                 tmp.append(i+j)
     else: 
         raise NotImplementedError
-    dump2file(path, tmp)
+    return tmp
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="""
     Support Mode:\n
+        -1: All 0-17\n
         0: SURN + 1 NAME (All lowercase e.g. zhangsan) \n
         1: SURN + 1 NAME (Only the first letter uppercase e.g. Zhangsan)\n
         2: SURN + 1 NAME (First letter of SURM or NAME uppercase e.g. ZhangSan)\n
@@ -249,9 +250,17 @@ if __name__ == "__main__":
         17: SURN + 2 NAME (Abbreviation e.g. lyy)\n
     """ , formatter_class=argparse.RawTextHelpFormatter)
     parser.add_argument('-nl', help='Namelists to use. Support MOST_USE_NAME or HANDPICK_NAME. You can also use your namelist. Default MOST_USE_NAME', default=MOST_USE_NAME)
-    parser.add_argument('-m', choices=range(18), help= 'Name styles 0-17', type=int, default=0)
+    parser.add_argument('-m', choices=range(-1, 18), help= 'Name styles -1, 0-17', type=int, default=0)
     parser.add_argument('-o', help='Ouput path')
     args = parser.parse_args()
     if args.nl == "HANDPICK_NAME":
         args.nl = HANDPICK_NAME
-    main(args.o, args.nl, args.m)
+    if args.m == -1:
+        names = []
+        for i in range(18):
+            tmp = main(args.nl, i)
+            names +=tmp
+    else:
+        names = main(args.nl, args.m)
+    names = set(names) #dedup
+    dump2file(args.o, names)

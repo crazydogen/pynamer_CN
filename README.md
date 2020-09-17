@@ -9,8 +9,16 @@ There are also some common first names used by most Chinese people. Pynamer_CN i
 - Build your own NOT USE passwd lists.
 ## How to use it?
 Usage: python pynamer_CN.py [-h] [-nl NL]
-                     [-m {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17}] [-o O]
+                     [-m {-1,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17}] [-o O]
+
+e.g.
+
+    python pynamer_CN -o ~/example0.txt -m 0
+
+    python pynamer_CN -o ~/example1.txt -m 0 -nl HANDPICK_NAME
+
 ### Name styles
+- -1: All 0-17
 - 0: SURN + 1 NAME (All lowercase e.g. zhangsan)
 - 1: SURN + 1 NAME (Only the first letter uppercase e.g. Zhangsan)
 - 2: SURN + 1 NAME (First letter of SURM or NAME uppercase e.g. ZhangSan)
