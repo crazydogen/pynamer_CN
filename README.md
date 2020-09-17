@@ -7,6 +7,7 @@ There are also some common first names used by most Chinese people. Pynamer_CN i
 - Easy to use
 - Support Python2/3 without dependencies
 - Up to 37125055 chinese names without duplication
+Feel free to PR for adding more names (if missed). 
 ## What you can do with pynamer_CN?
 - By pynamer_CN, you can generate a common Chinese name for yourself.
 - Build brute-force passwd dictionary (with pydictor or any dictor).
