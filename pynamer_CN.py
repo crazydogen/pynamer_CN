@@ -12,6 +12,8 @@
 #                                 
 # ************************************
 import argparse
+import gc
+gc.enable()
 
 # Ref. News about the National Name Report of China in 2019
 #TOP102 Surnname Coverage above 80% (based on news about the offical file of china gov) -> 89 pinyin of chinese surname
@@ -259,7 +261,8 @@ if __name__ == "__main__":
         names = []
         for i in range(18):
             tmp = main(args.nl, i)
-            names +=tmp
+            names += tmp
+            tmp = []
     else:
         names = main(args.nl, args.m)
     names = set(names) #dedup
