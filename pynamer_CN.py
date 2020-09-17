@@ -42,7 +42,7 @@ MOST_USE_NAME = ("ying", "hua", "wen", "yu", "xiu", "ming", "li", "lan", "hong",
 
 # MOST_USE_NAME_ABBREV = tuple(set([i[0] for i in MOST_USE_NAME])) + ('ch', 'sh', 'zh')
 
-#Handpicked elements of the first name -> 225
+#Handpicked elements of the first name -> 241
 # Ref. http://xh.5156edu.com/pinyi.html 
 HANDPICK_NAME = ("ai", "an", "ang",
                 "bo", "bi", "bai", "bei", "bao", "ban", "bben", "bin", "bang", "bing", "biao",
@@ -67,12 +67,12 @@ HANDPICK_NAME = ("ai", "an", "ang",
                 "zu", "zao", "zan", "zun", "zuo", "zeng", "zong", "zi", "ze", 
                 "zhi", "zhou", "zhan", "zhen", "zhong", "zhuan", "zhuo", "zhu", "zhe", "zheng",
                 "cha", "che", "chi", "chu", "chai", "chao", "chan", "chen", "chong", "chuang", "chuan", "chun", "cheng",
-                "sha", "shi", "shu", "shao", "shou", "shan", "shen", "shuo", "shuang", "shun")
+                "sha", "shi", "shu", "shao", "shou", "shan", "shen", "shuo", "shuang", "shun", "shang")
 
 # HANDPICK_NAME_ABBREV = tuple(set([i[0] for i in HANDPICK_NAME])) + ('ch', 'sh', 'zh')
 
 # FOR DEBUG
-# print(len(SURN), len(MOST_USE_NAME), len(HANDPICK_NAME))
+print(len(SURN), len(MOST_USE_NAME), len(HANDPICK_NAME))
 # # Duplication detection
 # import collections
 # print([item for item, count in collections.Counter(SURN).items() if count > 1])
