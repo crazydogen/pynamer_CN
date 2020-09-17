@@ -52,6 +52,6 @@ Here are some generated examples:
 [example0](https://github.com/crazydogen/pynamer_CN/blob/master/example0.txt)
 [example1](https://github.com/crazydogen/pynamer_CN/blob/master/example1.txt)
 
-:p Feel free to open an issue for adding more names (if missed). 
+:) Feel free to open an issue for adding more names (if missed). 
 ## License
 [MIT License](https://github.com/crazydogen/pynamer_CN/blob/master/LICENSE)
