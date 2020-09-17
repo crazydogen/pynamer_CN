@@ -72,7 +72,7 @@ HANDPICK_NAME = ("ai", "an", "ang",
 # HANDPICK_NAME_ABBREV = tuple(set([i[0] for i in HANDPICK_NAME])) + ('ch', 'sh', 'zh')
 
 # FOR DEBUG
-print(len(SURN), len(MOST_USE_NAME), len(HANDPICK_NAME))
+# print(len(SURN), len(MOST_USE_NAME), len(HANDPICK_NAME))
 # # Duplication detection
 # import collections
 # print([item for item, count in collections.Counter(SURN).items() if count > 1])
