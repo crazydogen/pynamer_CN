@@ -1,7 +1,7 @@
 # pynamer_CN
 A simple Chinese full name generator based on the TOP102 Chinese surname and pinyin first name.
 ## What is pynamer_CN?
-Pynamer_CN is a simple full name generator, which can generate 18 styles of the Chinese name (e.g. zhangsan, Zhangsan, ZhangSan, ZHANGSAN, sanzhang, SanZhang, Sanzhang, SANZHANG, zs or zhs). According to news about the National Name Report of China in 2019, the top102 surname of Chinese has covered 80%+ surnames in China. 
+Pynamer_CN is a simple full name generator, which can generate 18 styles of the Chinese name (e.g. zhangsan, Zhangsan, ZhangSan, ZHANGSAN, sanzhang, SanZhang, Sanzhang, SANZHANG, zs or zhs). According to news about the National Name Report of China in 2019, the top102 surname of Chinese has covered **80%+** surnames in China. 
 There are also some common first names used by most Chinese people. Pynamer_CN is written with simple python3 codes using if-elif-else structure. Surprisingly, pynamer_CN is also supporting python2.
 ## Why pynamer_CN?
 - Easy to use
@@ -10,7 +10,7 @@ There are also some common first names used by most Chinese people. Pynamer_CN i
 ## What you can do with pynamer_CN?
 - By pynamer_CN, you can generate a common Chinese name for yourself.
 - Build brute-force passwd dictionary (with pydictor or any dictor).
-- Build your own NOT USE passwd lists.
+- Build your own **NOT USE** passwd lists.
 ## How to use it?
 Usage: python pynamer_CN.py [-h] [-nl NL]
                      [-m {-1,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17}] [-o O]
@@ -22,7 +22,7 @@ e.g.
     python pynamer_CN -o ~/example1.txt -m 0 -nl HANDPICK_NAME
 
 ### Name styles
-- -1: All 0-17  NOTE Make sure you are using 64-bit version to obtain enough memory(> 4GB)
+- -1: All 0-17  **NOTE** Make sure you are using 64-bit version to obtain enough memory(> 4GB)
 - 0: SURN + 1 NAME (All lowercase e.g. zhangsan)
 - 1: SURN + 1 NAME (Only the first letter uppercase e.g. Zhangsan)
 - 2: SURN + 1 NAME (First letter of SURM or NAME uppercase e.g. ZhangSan)
