@@ -22,7 +22,7 @@ e.g.
     python pynamer_CN -o ~/example1.txt -m 0 -nl HANDPICK_NAME
 
 ### Name styles
-- -1: All 0-17  NOTE if use this mode Make sure you are using 64-bit version to obtain enough memory(> 4GB)
+- -1: All 0-17  NOTE Make sure you are using 64-bit version to obtain enough memory(> 4GB)
 - 0: SURN + 1 NAME (All lowercase e.g. zhangsan)
 - 1: SURN + 1 NAME (Only the first letter uppercase e.g. Zhangsan)
 - 2: SURN + 1 NAME (First letter of SURM or NAME uppercase e.g. ZhangSan)
