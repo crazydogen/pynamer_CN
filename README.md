@@ -16,11 +16,10 @@ Usage: python pynamer_CN.py [-h] [-nl NL]
                      [-m {-1,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17}] [-o O]
 
 e.g.
-
-    python pynamer_CN -o ~/example0.txt -m 0
-
-    python pynamer_CN -o ~/example1.txt -m 0 -nl HANDPICK_NAME
-
+```python
+python pynamer_CN -o ~/example0.txt -m 0
+python pynamer_CN -o ~/example1.txt -m 0 -nl HANDPICK_NAME
+```
 ### Name styles
 - -1: All 0-17  **NOTE** Make sure you are using 64-bit version to obtain enough memory(> 4GB)
 - 0: SURN + 1 NAME (All lowercase e.g. zhangsan)
